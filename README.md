@@ -40,14 +40,18 @@ The configuration details of each machine may be found below.
 
 ### Access Policies
 
-The machines on the internal network are not exposed to the public Internet. Only the local machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-66.41.201.138.  Machines within the network can be accessed only by ssh through the jump-box-provisioner virtual machine. The ELK-VM allows http traffic only from my local machine's IP address through port 5601.
+The machines on the internal network are not exposed to the public Internet. 
+
+Only the jump-box-provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+66.41.201.138  
+
+Machines within the network can be accessed only by ssh.
 Only the jump-box-provisioner virtual machine can access the ELK-VM via ssh connection. The Public IP for jump-box-provisioner is 20.55.80.105.
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
+| Name     | Publicly Accessible   | Allowed IP Addresses  |
+|----------|-----------------------|-----------------------|
 | jump-box-provisioner | No | 66.41.201.138 |
 | Brian-Red-Team-Security Vnet | No | 23.101.136.62 |
 
